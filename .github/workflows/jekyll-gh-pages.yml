@@ -1,5 +1,6 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+remote_theme: moonwalk
 
 on:
   # Runs on pushes targeting the default branch
@@ -37,7 +38,6 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        remote_theme: moonwalk
 
   # Deployment job
   deploy:
